@@ -14,7 +14,8 @@
         "canvas-toBlob.js": "git://github.com/eligrey/canvas-toBlob.js.git#latest",
         "vex": "latest",
         "jdataview": "latest",
-        "virtual-ui.js": "git://github.com/quasado/virtual-ui.js.git#latest"
+        "virtual-ui.js": "git://github.com/quasado/virtual-ui.js.git#latest",
+        "is-there": "git://github.com/IonicaBizau/node-is-there.git#1.1.0"
     },
     "devDependencies": {},
     "private": true
