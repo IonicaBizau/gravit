@@ -24,6 +24,7 @@
 
     var gui = require('nw.gui');
     var fs = require('fs');
+    var isThere = require('is-there');
 
     gui.App.on('open', function (cmdline) {
         if (cmdline && cmdline.length > 0) {
@@ -223,7 +224,7 @@
 
         var location = new URI(directory).filename(filename).path();
 
-        fs.exists(location, function (exists) {
+        isThere(location, function (exists) {
             if (!exists && createIfNotExists) {
                 done(location);
             } else if (exists) {
